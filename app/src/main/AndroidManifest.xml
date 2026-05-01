@@ -12,7 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppNovelero">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.splash.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.AppNovelero">
             <intent-filter>

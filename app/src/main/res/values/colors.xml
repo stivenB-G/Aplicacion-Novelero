@@ -2,4 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="azul_splash">#030716</color>
+    <color name="novelero_bg">#081120</color>
+    <color name="novelero_bg_dark">#050B18</color>
+    <color name="novelero_card">#151D2E</color>
+    <color name="novelero_card_light">#30394B</color>
+    <color name="novelero_primary">#6FA3FF</color>
+    <color name="novelero_accent">#7DD8FF</color>
+    <color name="novelero_text">#E8EEFF</color>
+    <color name="novelero_text_secondary">#B8C0D4</color>
+    <color name="novelero_muted">#7E879C</color>
+    <color name="novelero_error">#FFB4A9</color>
+    <color name="novelero_success">#7DD8FF</color>
 </resources>
