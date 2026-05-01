@@ -12,7 +12,7 @@
     <!-- Texto y Estados -->
     <color name="white">#FFFFFF</color>
     <color name="novelero_text_main">#FFFFFF</color>
-    <color name="novelero_text_secondary">#DCE2F8</color> <!-- Gris Opaco -->
+    <color name="novelero_text_secondary">#DCE2F8</color> <!-- Gris Opaco (aplicar opacidad en XML si es necesario) -->
     <color name="novelero_success">#4CAF50</color>       <!-- Verde Esmeralda: Comprado/Éxito -->
     <color name="novelero_danger">#FF6B6B</color>        <!-- Rojo: Para acciones de eliminar -->
 

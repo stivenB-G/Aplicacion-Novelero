@@ -2,27 +2,87 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    android:id="@+id/nav_graph_main"
+    app:startDestination="@id/navigation_biblioteca">
+
+    <!-- Usuario Lector/Escritor -->
+    <fragment
+        android:id="@+id/navigation_biblioteca"
+        android:name="com.example.appnovelero.ui.library.LibraryFragment"
+        android:label="Biblioteca"
+        tools:layout="@layout/fragment_biblioteca" />
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.appnovelero.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/navigation_explorar"
+        android:name="com.example.appnovelero.ui.explore.ExploreFragment"
+        android:label="Explorar"
+        tools:layout="@layout/fragment_explorar" />
 
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.appnovelero.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/navigation_publicar"
+        android:name="com.example.appnovelero.ui.publish.PublishFragment"
+        android:label="Publicar"
+        tools:layout="@layout/fragment_publicar" />
 
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+    <fragment
+        android:id="@+id/navigation_perfil"
+        android:name="com.example.appnovelero.ui.profile.ProfileFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+    <fragment
+        android:id="@+id/navigation_detalle_libro"
+        android:name="com.example.appnovelero.ui.book.BookDetailFragment"
+        android:label="Detalle del Libro"
+        tools:layout="@layout/fragment_detalle_libro" />
+
+    <fragment
+        android:id="@+id/navigation_lector"
+        android:name="com.example.appnovelero.ui.book.ReaderFragment"
+        android:label="Lector"
+        tools:layout="@layout/fragment_lector" />
+
+    <fragment
+        android:id="@+id/navigation_carrito"
+        android:name="com.example.appnovelero.ui.cart.CartFragment"
+        android:label="Carrito"
+        tools:layout="@layout/fragment_carrito" />
+
+    <fragment
+        android:id="@+id/navigation_mis_libros"
+        android:name="com.example.appnovelero.ui.book.MyBooksFragment"
+        android:label="Mis Libros"
+        tools:layout="@layout/fragment_mis_libros" />
+
+    <!-- Administración -->
+    <fragment
+        android:id="@+id/navigation_admin_perfil"
+        android:name="com.example.appnovelero.ui.admin.AdminProfileFragment"
+        android:label="Panel Admin"
+        tools:layout="@layout/fragment_admin_perfil" />
+
+    <fragment
+        android:id="@+id/navigation_admin_usuarios"
+        android:name="com.example.appnovelero.ui.admin.AdminUsersFragment"
+        android:label="Gestión de Usuarios"
+        tools:layout="@layout/fragment_admin_usuarios" />
+
+    <fragment
+        android:id="@+id/navigation_admin_libros"
+        android:name="com.example.appnovelero.ui.admin.AdminBooksFragment"
+        android:label="Gestión de Libros"
+        tools:layout="@layout/fragment_admin_libros" />
+
+    <fragment
+        android:id="@+id/navigation_admin_reportes"
+        android:name="com.example.appnovelero.ui.admin.AdminReportsFragment"
+        android:label="Reportes"
+        tools:layout="@layout/fragment_admin_reportes" />
+
+    <fragment
+        android:id="@+id/navigation_admin_editar_usuario"
+        android:name="com.example.appnovelero.ui.admin.AdminEditUserFragment"
+        android:label="Editar Usuario"
+        tools:layout="@layout/fragment_admin_editar_usuario" />
+
 </navigation>
