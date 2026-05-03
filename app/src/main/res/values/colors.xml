@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Colores Principales (Marca) -->
-    <color name="novelero_primary">#2979FF</color> <!-- Azul Eléctrico: Botones y acentos -->
-    <color name="novelero_accent">#B0C6FF</color>  <!-- Azul Glacial: Logos y destacados -->
+    <color name="novelero_primary">#2979FF</color> <!-- Para Botones y acentos -->
+    <color name="novelero_accent">#B0C6FF</color>  <!-- Para Logos y destacados -->
 
     <!-- Colores de Fondo y Superficie -->
-    <color name="novelero_bg">#0C1322</color>       <!-- Azul Medianoche: Fondo base -->
-    <color name="novelero_card">#151B2B</color>     <!-- Azul Cobalto: Tarjetas y modales -->
-    <color name="novelero_input_bg">#232A3A</color> <!-- Azul Grisáceo: Fondo de inputs y hover -->
+    <color name="novelero_bg">#0C1322</color>       <!-- Para Fondo base -->
+    <color name="novelero_card">#151B2B</color>     <!-- Para Tarjetas y modales -->
+    <color name="novelero_input_bg">#232A3A</color> <!-- Para Fondo de inputs y hover -->
 
     <!-- Texto y Estados -->
     <color name="white">#FFFFFF</color>
     <color name="novelero_text_main">#FFFFFF</color>
-    <color name="novelero_text_secondary">#DCE2F8</color> <!-- Gris Opaco -->
-    <color name="novelero_muted">#7E879C</color>         <!-- Gris suave para pistas -->
-    <color name="novelero_success">#4CAF50</color>       <!-- Verde Esmeralda: Comprado/Éxito -->
-    <color name="novelero_danger">#FF6B6B</color>        <!-- Rojo: Para acciones de eliminar -->
+    <color name="novelero_text_secondary">#DCE2F8</color> <!-- Para Texto secundario -->
+    <color name="novelero_muted">#7E879C</color>         <!-- Para Pistas y estados desactivados -->
+    <color name="novelero_success">#4CAF50</color>       <!-- Para Comprado/Éxito -->
+    <color name="novelero_danger">#FF6B6B</color>        <!-- Para Acciones de eliminar/error -->
 
-    <!-- Extras útiles -->
     <color name="black">#000000</color>
     <color name="transparent">#00000000</color>
 </resources>
