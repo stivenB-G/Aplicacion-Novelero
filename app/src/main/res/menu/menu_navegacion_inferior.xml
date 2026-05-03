@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_biblioteca"
+        android:icon="@drawable/icono_biblioteca"
+        android:title="BIBLIOTECA" />
+    <item
+        android:id="@+id/navigation_explorar"
+        android:icon="@drawable/icono_explorar"
+        android:title="EXPLORAR" />
+    <item
+        android:id="@+id/navigation_publicar"
+        android:icon="@drawable/icono_publicar"
+        android:title="PUBLICAR" />
+    <item
+        android:id="@+id/navigation_perfil"
+        android:icon="@drawable/icono_perfil"
+        android:title="PERFIL" />
+</menu>

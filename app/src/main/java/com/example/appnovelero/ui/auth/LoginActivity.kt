@@ -28,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
 
         // Acción al hacer clic en "¿Olvidaste tu contraseña?"
         tvOlvideContrasena.setOnClickListener {
-            val intent = Intent(this, RecuperarPasswordActivity::class.java)
+            val intent = Intent(this, RecuperarContrasenaActivity::class.java)
             startActivity(intent)
         }
 

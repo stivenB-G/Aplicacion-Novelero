@@ -7,44 +7,51 @@
     android:background="@color/novelero_bg"
     tools:context=".ui.auth.LoginActivity">
 
-    <!-- Cabecera -->
+    <!-- Logo y Cabecera -->
     <LinearLayout
         android:id="@+id/ll_cabecera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logosplash"
+            android:contentDescription="Logo Novelero" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:letterSpacing="0.1"
             android:text="NOVELERO"
             android:textColor="@color/novelero_accent"
-            android:textSize="45sp"
+            android:textSize="36sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:letterSpacing="0.2"
-            android:text="Lectura Continua"
+            android:text="LECTURA CONTINUA"
             android:textColor="@color/novelero_text_secondary"
             android:textSize="12sp"
             android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- Formulario -->
+    <!-- Formulario (Movido más abajo) -->
     <LinearLayout
         android:id="@+id/contenedor_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/fondo_cuadro_inicio"
         android:orientation="vertical"
         android:padding="28dp"
@@ -73,7 +80,7 @@
             android:textColorHint="@color/novelero_muted"
             android:textSize="15sp" />
 
-        <!-- Contrasena -->
+        <!-- Contraseña -->
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -113,7 +120,7 @@
             android:textColorHint="@color/novelero_muted"
             android:textSize="15sp" />
 
-        <!-- Boton -->
+        <!-- Botón -->
         <Button
             android:id="@+id/btn_iniciar_sesion"
             android:layout_width="match_parent"
