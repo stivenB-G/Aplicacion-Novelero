@@ -18,19 +18,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:src="@drawable/ic_editorial"
+                android:contentDescription="@string/menu_editorial"
                 app:tint="@color/novelero_primary" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:text="Editorial"
+                android:text="@string/menu_editorial"
                 android:textColor="@color/novelero_primary"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -41,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Publicar Obra"
+            android:text="@string/titulo_publicar"
             android:textColor="@color/white"
             android:textSize="32sp"
             android:textStyle="bold" />
@@ -51,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:lineHeight="22sp"
-            android:text="El mundo espera tu próxima gran historia. para que tu novela brille en la biblioteca de otros."
+            android:text="@string/desc_publicar"
             android:textColor="@color/novelero_text_secondary"
             android:textSize="14sp" />
 
@@ -60,17 +62,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="Nombre del libro"
+            android:text="@string/label_nombre_libro"
             android:textColor="@color/novelero_text_secondary"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/et_nombre_publicar"
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/fondo_campo_texto"
-            android:hint="Ej. El eco en el vacío"
+            android:hint="@string/hint_nombre_libro"
+            android:inputType="textCapWords"
+            android:autofillHints="name"
             android:paddingHorizontal="16dp"
             android:textColor="@color/white"
             android:textColorHint="@color/novelero_muted"
@@ -81,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Géneros"
+            android:text="@string/label_generos"
             android:textColor="@color/novelero_text_secondary"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -103,7 +108,7 @@
                     android:background="@drawable/fondo_chip_categoria_seleccionado"
                     android:paddingHorizontal="20dp"
                     android:paddingVertical="10dp"
-                    android:text="Fantasía"
+                    android:text="@string/cat_fantasia"
                     android:textColor="@color/novelero_bg"
                     android:textStyle="bold" />
 
@@ -114,7 +119,7 @@
                     android:background="@drawable/fondo_chip_categoria"
                     android:paddingHorizontal="20dp"
                     android:paddingVertical="10dp"
-                    android:text="Romance"
+                    android:text="@string/cat_romance"
                     android:textColor="@color/novelero_text_secondary" />
 
                 <TextView
@@ -124,7 +129,7 @@
                     android:background="@drawable/fondo_chip_categoria"
                     android:paddingHorizontal="20dp"
                     android:paddingVertical="10dp"
-                    android:text="Ciencia Ficción"
+                    android:text="@string/cat_ciencia_ficcion"
                     android:textColor="@color/novelero_text_secondary" />
 
                 <TextView
@@ -134,7 +139,7 @@
                     android:background="@drawable/fondo_chip_categoria"
                     android:paddingHorizontal="20dp"
                     android:paddingVertical="10dp"
-                    android:text="Misterio"
+                    android:text="@string/cat_misterio"
                     android:textColor="@color/novelero_text_secondary" />
 
                 <TextView
@@ -145,7 +150,8 @@
                     android:gravity="center"
                     android:text="+"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -154,18 +160,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Sinopsis del libro"
+            android:text="@string/label_sinopsis"
             android:textColor="@color/novelero_text_secondary"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <EditText
+            android:id="@+id/et_sinopsis_publicar"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/fondo_campo_texto"
             android:gravity="top"
-            android:hint="Una breve descripción que atrape al lector..."
+            android:hint="@string/hint_sinopsis"
+            android:inputType="textMultiLine"
+            android:autofillHints="none"
             android:padding="16dp"
             android:textColor="@color/white"
             android:textColorHint="@color/novelero_muted"
@@ -197,6 +206,7 @@
                         android:layout_height="match_parent"
                         android:padding="12dp"
                         android:src="@drawable/ic_galeria"
+                        android:contentDescription="@string/label_portada"
                         app:tint="@color/novelero_accent" />
                 </androidx.cardview.widget.CardView>
 
@@ -204,7 +214,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="Imagen de portada"
+                    android:text="@string/label_portada"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -212,7 +222,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="Formatos soportados: JPG, PNG"
+                    android:text="@string/formatos_soportados"
                     android:textColor="@color/novelero_text_secondary"
                     android:textSize="12sp" />
             </LinearLayout>
@@ -246,6 +256,7 @@
                         android:layout_height="match_parent"
                         android:padding="10dp"
                         android:src="@drawable/ic_archivo"
+                        android:contentDescription="@string/label_pdf"
                         app:tint="@color/novelero_accent" />
                 </androidx.cardview.widget.CardView>
 
@@ -253,7 +264,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:text="Archivo PDF de lectura"
+                    android:text="@string/label_pdf"
                     android:textColor="@color/white"
                     android:textSize="18sp"
                     android:textStyle="bold" />

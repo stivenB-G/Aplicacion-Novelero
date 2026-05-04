@@ -7,7 +7,7 @@
     android:background="@color/novelero_bg"
     tools:context=".ui.auth.RegisterActivity">
 
-    <!-- Logo y Cabecera (Igual que el Login para consistencia) -->
+    <!-- Logo y Cabecera -->
     <LinearLayout
         android:id="@+id/ll_cabecera_registro"
         android:layout_width="wrap_content"
@@ -23,14 +23,14 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:src="@drawable/logosplash"
-            android:contentDescription="Logo Novelero" />
+            android:contentDescription="@string/app_name" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:letterSpacing="0.1"
-            android:text="NOVELERO"
+            android:text="@string/titulo_app"
             android:textColor="@color/novelero_accent"
             android:textSize="36sp"
             android:textStyle="bold" />
@@ -39,13 +39,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:letterSpacing="0.2"
-            android:text="REGISTRO DE CUENTA"
+            android:text="@string/titulo_registro"
             android:textColor="@color/novelero_text_secondary"
             android:textSize="12sp"
             android:textStyle="bold" />
     </LinearLayout>
 
-    <!-- Formulario de Registro (Bajado un poco) -->
+    <!-- Formulario de Registro -->
     <LinearLayout
         android:id="@+id/contenedor_registro"
         android:layout_width="0dp"
@@ -63,7 +63,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre de Usuario"
+            android:text="@string/nombre_usuario"
             android:textColor="@color/novelero_text_secondary"
             android:textSize="13sp" />
 
@@ -73,8 +73,9 @@
             android:layout_height="54dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/fondo_campo_texto"
-            android:hint="p. ej. LectorNocturno"
+            android:hint="@string/hint_usuario"
             android:inputType="textPersonName"
+            android:autofillHints="username"
             android:paddingHorizontal="16dp"
             android:textColor="@color/white"
             android:textColorHint="@color/novelero_muted"
@@ -85,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Correo Electrónico"
+            android:text="@string/correo_electronico"
             android:textColor="@color/novelero_text_secondary"
             android:textSize="13sp" />
 
@@ -95,8 +96,9 @@
             android:layout_height="54dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/fondo_campo_texto"
-            android:hint="tu@email.com"
+            android:hint="@string/hint_correo"
             android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
             android:paddingHorizontal="16dp"
             android:textColor="@color/white"
             android:textColorHint="@color/novelero_muted"
@@ -107,7 +109,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Contraseña"
+            android:text="@string/contrasena"
             android:textColor="@color/novelero_text_secondary"
             android:textSize="13sp" />
 
@@ -117,8 +119,9 @@
             android:layout_height="54dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/fondo_campo_texto"
-            android:hint="••••••••"
+            android:hint="@string/hint_contrasena"
             android:inputType="textPassword"
+            android:autofillHints="password"
             android:paddingHorizontal="16dp"
             android:textColor="@color/white"
             android:textColorHint="@color/novelero_muted"
@@ -131,7 +134,7 @@
             android:layout_height="56dp"
             android:layout_marginTop="36dp"
             android:background="@drawable/fondo_boton_principal"
-            android:text="Crear Cuenta"
+            android:text="@string/btn_crear_cuenta"
             android:textAllCaps="false"
             android:textColor="@color/novelero_bg"
             android:textStyle="bold"
@@ -151,7 +154,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="¿Ya tienes una cuenta? "
+            android:text="@string/pregunta_login"
             android:textColor="@color/novelero_text_secondary"
             android:textSize="14sp" />
 
@@ -161,7 +164,7 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:focusable="true"
-            android:text="Iniciar Sesión"
+            android:text="@string/btn_iniciar_sesion"
             android:textColor="@color/white"
             android:textSize="14sp"
             android:textStyle="bold" />

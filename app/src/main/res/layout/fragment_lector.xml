@@ -1,6 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/novelero_bg">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Barra Superior -->
+    <RelativeLayout
+        android:id="@+id/rl_barra_lector"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/btn_volver_lector"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_atras"
+            android:contentDescription="@string/titulo_lectura"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@id/btn_volver_lector"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_lectura"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOMBRAS DEL DESTINO ETERNO"
+                android:textColor="@color/novelero_text_secondary"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SmallSp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_mas_opciones"
+            android:contentDescription="@null"
+            app:tint="@color/novelero_accent" />
+    </RelativeLayout>
+
+    <!-- Contenido Lectura -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_footer_lector"
+        android:layout_below="@id/rl_barra_lector"
+        android:paddingHorizontal="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <!-- Ilustración del Capítulo -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/novelero_card">
+                <!-- Imagen Placeholder -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@color/novelero_input_bg"
+                    android:contentDescription="@null" />
+            </androidx.cardview.widget.CardView>
+
+            <!-- Título del Capítulo -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Capítulo IV: El Despertar del Vacío"
+                android:textColor="@color/novelero_accent"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:lineHeight="34sp"
+                tools:ignore="HardcodedText" />
+
+            <!-- Texto de la Historia -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:lineHeight="26sp"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@color/novelero_text_secondary"
+                android:textSize="17sp"
+                tools:text="La oscuridad en el Reino de las Sombras..." />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Barra de Progreso Inferior -->
+    <LinearLayout
+        android:id="@+id/ll_footer_lector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/num_pagina"
+                android:textColor="@color/novelero_muted"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="PÁG 124" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/progreso_libro"
+                android:textColor="@color/novelero_muted"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="25% DEL LIBRO" />
+        </RelativeLayout>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:progress="25"
+            android:progressTint="@color/novelero_primary"
+            android:progressBackgroundTint="@color/novelero_input_bg" />
+    </LinearLayout>
+
+</RelativeLayout>

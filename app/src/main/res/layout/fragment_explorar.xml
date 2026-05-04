@@ -26,6 +26,7 @@
                 android:layout_height="20dp"
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_buscar"
+                android:contentDescription="@string/hint_buscar"
                 app:tint="@color/novelero_text_secondary" />
 
             <EditText
@@ -34,8 +35,9 @@
                 android:layout_marginStart="12dp"
                 android:layout_toEndOf="@id/iv_search_icon"
                 android:background="@android:color/transparent"
-                android:hint="Buscar novelas, autores..."
+                android:hint="@string/hint_buscar"
                 android:inputType="text"
+                android:autofillHints="name"
                 android:textColor="@color/white"
                 android:textColorHint="@color/novelero_muted"
                 android:textSize="14sp" />
@@ -59,7 +61,7 @@
                     android:background="@drawable/fondo_chip_categoria_seleccionado"
                     android:paddingHorizontal="24dp"
                     android:paddingVertical="10dp"
-                    android:text="Todo"
+                    android:text="@string/cat_todo"
                     android:textColor="@color/novelero_bg"
                     android:textStyle="bold" />
 
@@ -70,7 +72,7 @@
                     android:background="@drawable/fondo_chip_categoria"
                     android:paddingHorizontal="24dp"
                     android:paddingVertical="10dp"
-                    android:text="Fantasía"
+                    android:text="@string/cat_fantasia"
                     android:textColor="@color/white" />
 
                 <TextView
@@ -80,7 +82,7 @@
                     android:background="@drawable/fondo_chip_categoria"
                     android:paddingHorizontal="24dp"
                     android:paddingVertical="10dp"
-                    android:text="Romance"
+                    android:text="@string/cat_romance"
                     android:textColor="@color/white" />
 
                 <TextView
@@ -90,7 +92,7 @@
                     android:background="@drawable/fondo_chip_categoria"
                     android:paddingHorizontal="24dp"
                     android:paddingVertical="10dp"
-                    android:text="Misterio"
+                    android:text="@string/cat_misterio"
                     android:textColor="@color/white" />
             </LinearLayout>
         </HorizontalScrollView>
@@ -104,7 +106,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Populares Ahora"
+                android:text="@string/titulo_populares"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -114,6 +116,7 @@
                 android:layout_height="24dp"
                 android:layout_alignParentEnd="true"
                 android:src="@android:drawable/ic_media_play"
+                android:contentDescription="@null"
                 app:tint="@color/novelero_accent" />
         </RelativeLayout>
 
@@ -185,7 +188,8 @@
                             android:background="@drawable/fondo_chip_categoria"
                             android:paddingHorizontal="10dp"
                             android:paddingVertical="4dp"
-                            android:text="FANTASÍA"
+                            android:text="@string/cat_fantasia"
+                            android:textAllCaps="true"
                             android:textColor="@color/novelero_text_secondary"
                             android:textSize="11sp" />
                     </LinearLayout>
@@ -260,7 +264,8 @@
                             android:background="@drawable/fondo_chip_categoria"
                             android:paddingHorizontal="10dp"
                             android:paddingVertical="4dp"
-                            android:text="ROMANCE"
+                            android:text="@string/cat_romance"
+                            android:textAllCaps="true"
                             android:textColor="@color/novelero_text_secondary"
                             android:textSize="11sp" />
                     </LinearLayout>

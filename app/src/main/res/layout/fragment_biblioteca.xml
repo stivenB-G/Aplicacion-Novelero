@@ -18,10 +18,11 @@
             android:id="@+id/tv_saludo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hola, Alex"
+            android:text="@string/saludo_usuario"
             android:textColor="@color/white"
             android:textSize="32sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:text="Hola, Alex" />
 
         <!-- Línea de estadísticas y Chip Premium -->
         <LinearLayout
@@ -35,7 +36,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Has leído 12 capítulos esta semana."
+                android:text="@string/estadistica_semanal"
                 android:textColor="@color/novelero_text_secondary"
                 android:textSize="14sp" />
 
@@ -57,7 +58,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="PREMIUM"
+                    android:text="@string/tag_premium"
                     android:textColor="@color/novelero_accent"
                     android:textSize="10sp"
                     android:textStyle="bold" />
@@ -81,22 +82,22 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Favoritos" />
+                android:text="@string/tab_favoritos" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Leer después" />
+                android:text="@string/tab_leer_despues" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pausado" />
+                android:text="@string/tab_pausado" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Mis libros" />
+                android:text="@string/tab_mis_libros" />
         </com.google.android.material.tabs.TabLayout>
 
         <!-- Grid de Libros -->
@@ -143,9 +144,10 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="75% leído"
+                                android:text="@string/porcentaje_leido"
                                 android:textColor="@color/white"
-                                android:textSize="10sp" />
+                                android:textSize="10sp"
+                                tools:text="75% leído" />
 
                             <ProgressBar
                                 style="?android:attr/progressBarStyleHorizontal"
@@ -209,9 +211,10 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="25% leído"
+                                android:text="@string/porcentaje_leido"
                                 android:textColor="@color/white"
-                                android:textSize="10sp" />
+                                android:textSize="10sp"
+                                tools:text="25% leído" />
 
                             <ProgressBar
                                 style="?android:attr/progressBarStyleHorizontal"

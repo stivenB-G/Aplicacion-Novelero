@@ -21,7 +21,8 @@
             android:text="Carrito de Compras"
             android:textColor="@color/white"
             android:textSize="28sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,7 +30,8 @@
             android:layout_marginTop="8dp"
             android:text="3 artículos en tu orden"
             android:textColor="@color/novelero_text_secondary"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
 
         <!-- Lista de Libros en Carrito -->
         <LinearLayout
@@ -76,14 +78,16 @@
                             android:text="La espada del guerrero"
                             android:textColor="@color/white"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Elena Valiente"
                             android:textColor="@color/novelero_text_secondary"
-                            android:textSize="13sp" />
+                            android:textSize="13sp"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -92,7 +96,8 @@
                             android:text="$25.000 COP"
                             android:textColor="@color/novelero_accent"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
                     </LinearLayout>
 
                     <ImageView
@@ -101,6 +106,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:src="@drawable/ic_borrar"
+                        android:contentDescription="@null"
                         app:tint="@color/novelero_muted" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -141,14 +147,16 @@
                             android:text="Hyber Cyber"
                             android:textColor="@color/white"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Kenji Sato"
                             android:textColor="@color/novelero_text_secondary"
-                            android:textSize="13sp" />
+                            android:textSize="13sp"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -157,7 +165,8 @@
                             android:text="$32.000 COP"
                             android:textColor="@color/novelero_accent"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
                     </LinearLayout>
 
                     <ImageView
@@ -166,6 +175,7 @@
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
                         android:src="@drawable/ic_borrar"
+                        android:contentDescription="@null"
                         app:tint="@color/novelero_muted" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -194,13 +204,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Subtotal (2 artículos)"
-                        android:textColor="@color/novelero_text_secondary" />
+                        android:textColor="@color/novelero_text_secondary"
+                        tools:ignore="HardcodedText" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="$57.000 COP"
-                        android:textColor="@color/white" />
+                        android:textColor="@color/white"
+                        tools:ignore="HardcodedText" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -211,14 +223,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Impuestos"
-                        android:textColor="@color/novelero_text_secondary" />
+                        android:textColor="@color/novelero_text_secondary"
+                        tools:ignore="HardcodedText" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentEnd="true"
                         android:text="Calculado en el pago"
                         android:textColor="@color/novelero_muted"
-                        android:textSize="12sp" />
+                        android:textSize="12sp"
+                        tools:ignore="HardcodedText" />
                 </RelativeLayout>
 
                 <View
@@ -237,7 +251,8 @@
                         android:text="Total"
                         android:textColor="@color/white"
                         android:textSize="18sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -245,7 +260,8 @@
                         android:text="$57.000 COP"
                         android:textColor="@color/white"
                         android:textSize="22sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
                 </RelativeLayout>
 
                 <Button
@@ -259,7 +275,8 @@
                     android:textColor="@color/novelero_bg"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:backgroundTint="@null" />
+                    app:backgroundTint="@null"
+                    tools:ignore="HardcodedText" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

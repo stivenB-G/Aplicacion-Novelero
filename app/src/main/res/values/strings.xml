@@ -1,47 +1,100 @@
 <resources>
-    <string name="app_name">App Novelero</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="app_name">Novelero</string>
+    <string name="action_settings">Ajustes</string>
 
-    <string name="lorem_ipsum">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
-        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
-        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
-        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
-        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
-        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
-        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
-        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
-        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
-        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
-        bibendum, vel congue leo egestas.\n\n
-        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
-        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
-        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
-        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
-        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
-        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
-        est.\n\n
-        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
-        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
-        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
-        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
-        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
-        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
-        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
-        convallis.\n\n
-        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
-        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
-        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
-        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
-        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
-        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
-        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
-    </string>
-    <string name="Texto_bienvenida">Novelero</string>
+    <!-- Pantallas de Autenticación -->
+    <string name="titulo_app">NOVELERO</string>
+    <string name="eslogan_app">LECTURA CONTINUA</string>
+    <string name="correo_electronico">Correo Electrónico</string>
+    <string name="hint_correo">tu@email.com</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="olvide_contrasena">¿Olvidaste tu contraseña?</string>
+    <string name="hint_contrasena">••••••••</string>
+    <string name="btn_iniciar_sesion">Iniciar Sesión</string>
+    <string name="pregunta_registro">¿No tienes una cuenta? </string>
+    <string name="accion_registrate">Regístrate</string>
+
+    <string name="titulo_registro">REGISTRO DE CUENTA</string>
+    <string name="eslogan_registro">COMIENZA TU PRÓXIMA GRAN AVENTURA</string>
+    <string name="nombre_usuario">Nombre de Usuario</string>
+    <string name="hint_usuario">p. ej. LectorNocturno</string>
+    <string name="btn_crear_cuenta">Crear Cuenta</string>
+    <string name="pregunta_login">¿Ya tienes una cuenta? </string>
+
+    <string name="titulo_recuperar">Recuperar Contraseña</string>
+    <string name="instrucciones_recuperar">Introduce tu correo electrónico y te enviaremos las instrucciones para restablecer tu contraseña.</string>
+    <string name="hint_correo_ejemplo">nombre@ejemplo.com</string>
+    <string name="btn_enviar_instrucciones">Enviar instrucciones  →</string>
+    <string name="volver_inicio_sesion">←  Volver al Inicio de Sesión</string>
+
+    <!-- Biblioteca -->
+    <string name="saludo_usuario">Hola, %s</string>
+    <string name="estadistica_semanal">Has leído 12 capítulos esta semana.</string>
+    <string name="tag_premium">PREMIUM</string>
+    <string name="tab_favoritos">Favoritos</string>
+    <string name="tab_leer_despues">Leer después</string>
+    <string name="tab_pausado">Pausado</string>
+    <string name="tab_mis_libros">Mis libros</string>
+    <string name="porcentaje_leido">%d%% leído</string>
+
+    <!-- Explorar -->
+    <string name="hint_buscar">Buscar novelas, autores...</string>
+    <string name="cat_todo">Todo</string>
+    <string name="cat_fantasia">Fantasía</string>
+    <string name="cat_romance">Romance</string>
+    <string name="cat_ciencia_ficcion">Ciencia Ficción</string>
+    <string name="cat_misterio">Misterio</string>
+    <string name="titulo_populares">Populares Ahora</string>
+
+    <!-- Publicar -->
+    <string name="menu_editorial">Editorial</string>
+    <string name="titulo_publicar">Publicar Obra</string>
+    <string name="desc_publicar">El mundo espera tu próxima gran historia. para que tu novela brille en la biblioteca de otros.</string>
+    <string name="label_nombre_libro">Nombre del libro</string>
+    <string name="hint_nombre_libro">Ej. El eco en el vacío</string>
+    <string name="label_generos">Géneros</string>
+    <string name="label_sinopsis">Sinopsis del libro</string>
+    <string name="hint_sinopsis">Una breve descripción que atrape al lector...</string>
+    <string name="label_portada">Imagen de portada</string>
+    <string name="formatos_soportados">Formatos soportados: JPG, PNG</string>
+    <string name="label_pdf">Archivo PDF de lectura</string>
+
+    <!-- Perfil -->
+    <string name="titulo_perfil">Perfil</string>
+    <string name="estadistica_leidos">Libros Leídos</string>
+    <string name="estadistica_publicados">Libros Publicados</string>
+    <string name="ajuste_nombre">Cambiar nombre de usuario</string>
+    <string name="ajuste_password">Cambiar contraseña</string>
+    <string name="btn_cerrar_sesion">CERRAR SESIÓN</string>
+
+    <!-- Lector -->
+    <string name="titulo_lectura">Lectura</string>
+    <string name="num_pagina">PÁG %d</string>
+    <string name="progreso_libro">%d%% DEL LIBRO</string>
+
+    <!-- Mis Libros -->
+    <string name="subir_nueva_obra">Subir Nueva Obra</string>
+    <string name="label_borrador">BORRADOR</string>
+    <string name="btn_ver">VER</string>
+    <string name="btn_editar">EDITAR</string>
+    <string name="btn_eliminar">ELIMINAR</string>
+
+    <!-- Administración -->
+    <string name="titulo_administracion">Administración</string>
+    <string name="panel_control">Panel de Control</string>
+    <string name="gestion_usuarios">Gestión de Usuarios</string>
+    <string name="desc_gestion_usuarios">Administra cuentas, roles y permisos de la plataforma.</string>
+    <string name="gestion_libros">Gestión de Libros</string>
+    <string name="desc_gestion_libros">Modera catálogo, aprueba publicaciones y edita metadatos.</string>
+    <string name="reportes_actividad">Reportes y Actividad</string>
+    <string name="desc_reportes">Métricas de sistema y reportes de usuarios.</string>
+    <string name="btn_agregar_usuario">Agregar Usuario</string>
+    <string name="btn_agregar_libro">Agregar Libro</string>
+    <string name="titulo_admin_libros">Gestión de Libros</string>
+    <string name="libros_destacados">LIBROS DESTACADOS</string>
+    <string name="ver_todos">VER TODOS</string>
+    <string name="todas_las_novelas">TODAS LAS NOVELAS</string>
+
+    <string name="Texto_bienvenida">Bienvenido a Novelero</string>
+    <string name="lorem_ipsum">La oscuridad en el Reino de las Sombras no era una simple ausencia de luz. Era una entidad palpable, una neblina densa que se enroscaba alrededor de mis tobillos como dedos fríos que buscaban arrastrarme hacia el abismo.\n\nCaminé con cautela, sintiendo el peso de la espada \'Eterna\' en mi espalda. Cada paso resonaba en el silencio absoluto, un eco que parecía burlarse de mi determinación. ¿Habría valido la pena este viaje? Los ancianos decían que solo aquel con el corazón puro podría despertar el poder latente en el vacío, pero mi corazón estaba lleno de dudas y arrepentimiento.\n\nDe repente, una luz tenue comenzó a parpadear en la distancia. No era la luz del sol, sino un resplandor azul eléctrico que palpitaba al ritmo de un corazón agitado. Me acerqué, con la mano en el pomo de mi espada, listo para cualquier cosa que pudiera surgir de las sombras.</string>
 </resources>
