@@ -350,6 +350,11 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <!-- Espaciador final para evitar que el contenido quede oculto tras el BottomNav -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
         </LinearLayout>
 
     </LinearLayout>
