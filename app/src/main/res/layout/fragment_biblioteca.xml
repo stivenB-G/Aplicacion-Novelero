@@ -24,13 +24,14 @@
             android:textStyle="bold"
             tools:text="Hola, Alex" />
 
-        <!-- Línea de estadísticas y Chip Premium -->
+        <!-- Línea de estadísticas -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <TextView
                 android:layout_width="0dp"
@@ -65,7 +66,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Pestañas (Tabs) -->
+        <!-- Pestañas -->
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout_biblioteca"
             android:layout_width="match_parent"
@@ -100,7 +101,7 @@
                 android:text="@string/tab_mis_libros" />
         </com.google.android.material.tabs.TabLayout>
 
-        <!-- Grid de Libros -->
+        <!-- Grid -->
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -126,13 +127,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
-                        <!-- Imagen de Portada (Placeholder) -->
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="@color/novelero_card" />
 
-                        <!-- Superposición de Progreso -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -167,14 +166,16 @@
                     android:text="Sombras del Destino Eterno"
                     android:textColor="@color/white"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Diana Jimenez"
                     android:textColor="@color/novelero_text_secondary"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
             </LinearLayout>
 
             <!-- Libro 2 -->
@@ -234,14 +235,16 @@
                     android:text="Neo-Tokio: Protocolo Zero"
                     android:textColor="@color/white"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Kenji"
                     android:textColor="@color/novelero_text_secondary"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
             </LinearLayout>
 
         </GridLayout>

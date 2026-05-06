@@ -27,18 +27,19 @@
     <string name="btn_enviar_instrucciones">Enviar instrucciones  →</string>
     <string name="volver_inicio_sesion">←  Volver al Inicio de Sesión</string>
 
-    <!-- Biblioteca -->
-    <string name="saludo_usuario">Hola, %s</string>
+    <!-- Biblioteca (Textos reales para la maqueta) -->
+    <string name="saludo_usuario">Hola, Alex</string>
     <string name="estadistica_semanal">Has leído 12 capítulos esta semana.</string>
     <string name="tag_premium">PREMIUM</string>
     <string name="tab_favoritos">Favoritos</string>
     <string name="tab_leer_despues">Leer después</string>
     <string name="tab_pausado">Pausado</string>
     <string name="tab_mis_libros">Mis libros</string>
-    <string name="porcentaje_leido">%d%% leído</string>
+    <string name="porcentaje_leido">75% leído</string>
+    <string name="porcentaje_leido_2">25% leído</string>
 
     <!-- Explorar -->
-    <string name="hint_buscar">Buscar novelas, autores...</string>
+    <string name="hint_buscar">Buscar novelas, autores…</string>
     <string name="cat_todo">Todo</string>
     <string name="cat_fantasia">Fantasía</string>
     <string name="cat_romance">Romance</string>
@@ -69,8 +70,8 @@
 
     <!-- Lector -->
     <string name="titulo_lectura">Lectura</string>
-    <string name="num_pagina">PÁG %d</string>
-    <string name="progreso_libro">%d%% DEL LIBRO</string>
+    <string name="num_pagina">PÁG 124</string>
+    <string name="progreso_libro">25% DEL LIBRO</string>
 
     <!-- Mis Libros -->
     <string name="subir_nueva_obra">Subir Nueva Obra</string>
