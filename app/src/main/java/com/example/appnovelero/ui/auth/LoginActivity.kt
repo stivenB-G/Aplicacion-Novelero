@@ -32,6 +32,7 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //Comentario
         // Acción al hacer clic en "Regístrate" (Footer)
         tvIrRegistro.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
