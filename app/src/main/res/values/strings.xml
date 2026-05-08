@@ -96,6 +96,18 @@
     <string name="ver_todos">VER TODOS</string>
     <string name="todas_las_novelas">TODAS LAS NOVELAS</string>
 
+    <!-- Agregar Nuevo Usuario Dialog -->
+    <string name="titulo_agregar_usuario">Agregar Nuevo Usuario</string>
+    <string name="imagen_perfil">IMAGEN DE PERFIL</string>
+    <string name="tipo_cuenta">TIPO DE CUENTA</string>
+    <string name="usuario_free">Usuario Free</string>
+    <string name="usuario_premium">Usuario Premium</string>
+    <string name="administrador">Administrador</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_guardar_usuario">Guardar Usuario</string>
+    <string name="hint_username_ej">Ej: user_123</string>
+    <string name="hint_email_ej">usuario@correo.com</string>
+
     <string name="Texto_bienvenida">Bienvenido a Novelero</string>
     <string name="lorem_ipsum">La oscuridad en el Reino de las Sombras no era una simple ausencia de luz. Era una entidad palpable, una neblina densa que se enroscaba alrededor de mis tobillos como dedos fríos que buscaban arrastrarme hacia el abismo.\n\nCaminé con cautela, sintiendo el peso de la espada \'Eterna\' en mi espalda. Cada paso resonaba en el silencio absoluto, un eco que parecía burlarse de mi determinación. ¿Habría valido la pena este viaje? Los ancianos decían que solo aquel con el corazón puro podría despertar el poder latente en el vacío, pero mi corazón estaba lleno de dudas y arrepentimiento.\n\nDe repente, una luz tenue comenzó a parpadear en la distancia. No era la luz del sol, sino un resplandor azul eléctrico que palpitaba al ritmo de un corazón agitado. Me acerqué, con la mano en el pomo de mi espada, listo para cualquier cosa que pudiera surgir de las sombras.</string>
 </resources>

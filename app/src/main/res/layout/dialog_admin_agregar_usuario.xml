@@ -1,6 +1,231 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="@color/novelero_card"
+    app:cardCornerRadius="28dp"
+    app:cardElevation="8dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Header -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tv_titulo_dialogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/titulo_agregar_usuario"
+                    android:textColor="@color/novelero_accent"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="RelativeOverlap" />
+
+                <ImageView
+                    android:id="@+id/btn_cerrar_dialogo"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_close_x"
+                    android:contentDescription="Cerrar"
+                    app:tint="@color/novelero_muted"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+
+            <!-- Profile Image Placeholder -->
+            <LinearLayout
+                android:id="@+id/layout_upload_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="24dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/fondo_subida" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_camera"
+                        app:tint="@color/novelero_muted"
+                        tools:ignore="ContentDescription" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/imagen_perfil"
+                    android:textColor="@color/novelero_muted"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Username Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre_usuario"
+                android:textColor="@color/novelero_muted"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/fondo_campo_texto"
+                android:hint="@string/hint_username_ej"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="#90A4AE"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <!-- Email Field -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/correo_electronico"
+                android:textColor="@color/novelero_muted"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/fondo_campo_texto"
+                android:hint="@string/hint_email_ej"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="#90A4AE"
+                android:textSize="14sp"
+                tools:ignore="Autofill" />
+
+            <!-- Account Type Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo_cuenta"
+                android:textColor="@color/novelero_muted"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_marginBottom="12dp" />
+
+            <RadioGroup
+                android:id="@+id/rg_tipo_cuenta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rb_free"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/fondo_campo_texto"
+                    android:buttonTint="@color/novelero_primary"
+                    android:paddingHorizontal="16dp"
+                    android:text="@string/usuario_free"
+                    android:textColor="@color/white"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/rb_premium"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/fondo_campo_texto"
+                    android:buttonTint="@color/novelero_primary"
+                    android:paddingHorizontal="16dp"
+                    android:text="@string/usuario_premium"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/rb_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/fondo_campo_texto"
+                    android:buttonTint="@color/novelero_primary"
+                    android:paddingHorizontal="16dp"
+                    android:text="@string/administrador"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+            <!-- Buttons Footer -->
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cancelar"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    android:backgroundTint="@color/novelero_input_bg"
+                    android:text="@string/btn_cancelar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/novelero_text_secondary"
+                    app:cornerRadius="14dp" />
+
+                <Button
+                    android:id="@+id/btn_guardar"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:layout_marginStart="6dp"
+                    android:background="@drawable/fondo_boton_principal"
+                    app:backgroundTint="@null"
+                    android:text="@string/btn_guardar_usuario"
+                    android:textAllCaps="false"
+                    android:textColor="@color/novelero_bg"
+                    android:textStyle="bold"
+                    app:cornerRadius="14dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>
