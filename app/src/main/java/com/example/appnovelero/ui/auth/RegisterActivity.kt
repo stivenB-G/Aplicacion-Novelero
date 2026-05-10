@@ -19,15 +19,13 @@ class RegisterActivity : AppCompatActivity() {
 
         // Acción al hacer clic en "Crear cuenta"
         btnCrearCuenta.setOnClickListener {
-            // Simulamos el registro exitoso navegando a la pantalla principal
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            finish() // Cerramos la pantalla de registro para que no pueda volver atrás
+            finish()
         }
 
         // Acción al hacer clic en "Iniciar Sesión" (Footer)
         tvIrLogin.setOnClickListener {
-            // Regresamos a la pantalla de Inicio de Sesión
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()

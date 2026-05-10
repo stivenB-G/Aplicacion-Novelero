@@ -23,6 +23,13 @@ class AddUserDialogFragment : DialogFragment() {
         return binding.root
     }
 
+    override fun onStart() {
+        super.onStart()
+        // Forzamos el ancho al 90% de la pantalla
+        val width = (resources.displayMetrics.widthPixels * 0.90).toInt()
+        dialog?.window?.setLayout(width, ViewGroup.LayoutParams.WRAP_CONTENT)
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         
@@ -42,7 +49,7 @@ class AddUserDialogFragment : DialogFragment() {
         }
 
         binding.btnGuardar.setOnClickListener {
-            // Aquí iría la lógica para guardar el usuario
+            // Lógica simulada de guardado
             dismiss()
         }
         

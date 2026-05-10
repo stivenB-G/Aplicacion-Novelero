@@ -21,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
 
         // Acción al hacer clic en "Iniciar Sesión"
         btnIniciarSesion.setOnClickListener {
-            // Simulamos el inicio de sesión exitoso navegando a la pantalla principal
+            // Simulamos el inicio de sesión exitoso metiendonos en la panrtalla principal
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
@@ -29,9 +29,6 @@ class LoginActivity : AppCompatActivity() {
 
         // Acción al hacer clic en "¿Olvidaste tu contraseña?"
         tvForgotPassword.setOnClickListener {
-            // Nota: Para que findNavController funcione, LoginActivity debe tener un NavHostFragment
-            // O esta navegación debería ocurrir dentro de una actividad que contenga el nav_graph.
-            // Por ahora, implementamos según lo solicitado:
             try {
                 findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.forgotPasswordFragment)
             } catch (e: Exception) {
@@ -41,8 +38,8 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        //Comentario
-        // Acción al hacer clic en "Regístrate" (Footer)
+
+        // Acción al hacer clic en "Regístrate"
         tvIrRegistro.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)

@@ -101,6 +101,29 @@
     <string name="ver_todos">VER TODOS</string>
     <string name="todas_las_novelas">TODAS LAS NOVELAS</string>
 
+    <!-- Diálogos de Administración -->
+    <string name="titulo_agregar_usuario">Agregar Nuevo Usuario</string>
+    <string name="imagen_perfil">IMAGEN DE PERFIL</string>
+    <string name="hint_username_ej">Ej: user_123</string>
+    <string name="hint_email_ej">usuario@correo.com</string>
+    <string name="tipo_cuenta">TIPO DE CUENTA</string>
+    <string name="usuario_free">Usuario Free</string>
+    <string name="usuario_premium">Usuario Premium</string>
+    <string name="administrador">Administrador</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_guardar_usuario">Guardar Usuario</string>
+    <string name="btn_guardar_cambios">Guardar Cambios</string>
+
+    <string name="titulo_editar_libro">EDITAR LIBRO</string>
+    <string name="cambiar_portada">CAMBIAR PORTADA</string>
+    <string name="hint_nombre_libro_ej">Ej. Crónicas del Vacío</string>
+    <string name="hint_sinopsis_ej">Escribe la sinopsis aquí...</string>
+    <string name="precio_cop">PRECIO (COP)</string>
+    <string name="hint_precio_ej">45000</string>
+    <string name="generos">GÉNEROS</string>
+    <string name="cat_ficcion">Ficción</string>
+    <string name="hint_anadir_genero">Añadir nuevo género...</string>
+
     <!-- Admin Dashboard -->
     <string name="admin_dashboard_title">Dashboard Administrativo</string>
     <string name="admin_dashboard_subtitle">Control general de Novelero</string>

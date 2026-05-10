@@ -49,7 +49,7 @@ class EditBookDialogFragment : DialogFragment() {
         binding.btnAnadirGenero.setOnClickListener {
             val nuevoGenero = binding.etNuevoGenero.text.toString()
             if (nuevoGenero.isNotEmpty()) {
-                // Lógica para añadir chip (opcional para maqueta)
+                // Lógica para añadir chip
                 binding.etNuevoGenero.text.clear()
             }
         }
