@@ -67,6 +67,11 @@
     <string name="ajuste_nombre">Cambiar nombre de usuario</string>
     <string name="ajuste_password">Cambiar contraseña</string>
     <string name="btn_cerrar_sesion">CERRAR SESIÓN</string>
+    <string name="profile_name_placeholder">Jesús Castiblanco</string>
+    <string name="profile_email_placeholder">jesus@email.com</string>
+    <string name="profile_bought_books">Libros Comprados</string>
+    <string name="profile_bought_count_placeholder">12 libros</string>
+    <string name="content_description_profile_image">Imagen de perfil</string>
 
     <!-- Lector -->
     <string name="titulo_lectura">Lectura</string>
