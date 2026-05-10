@@ -42,6 +42,7 @@
     <string name="hint_buscar">Buscar novelas, autores…</string>
     <string name="cat_todo">Todo</string>
     <string name="cat_fantasia">Fantasía</string>
+    <string name="cat_ficcion">Ficción</string>
     <string name="cat_romance">Romance</string>
     <string name="cat_ciencia_ficcion">Ciencia Ficción</string>
     <string name="cat_misterio">Misterio</string>
@@ -112,6 +113,17 @@
     <string name="btn_guardar_usuario">Guardar Usuario</string>
     <string name="hint_username_ej">Ej: user_123</string>
     <string name="hint_email_ej">usuario@correo.com</string>
+
+    <!-- Editar Libro Dialog -->
+    <string name="titulo_editar_libro">EDITAR LIBRO</string>
+    <string name="cambiar_portada">CAMBIAR PORTADA</string>
+    <string name="precio_cop">PRECIO (COP)</string>
+    <string name="generos">GÉNEROS</string>
+    <string name="hint_anadir_genero">Añadir nuevo género...</string>
+    <string name="btn_guardar_cambios">GUARDAR CAMBIOS</string>
+    <string name="hint_nombre_libro_ej">Crónicas del Vacío</string>
+    <string name="hint_sinopsis_ej">Una historia galáctica donde la humanidad debe enfrentarse a los misterios ocultos en los rincones más oscuros del universo.</string>
+    <string name="hint_precio_ej">45000</string>
 
     <string name="Texto_bienvenida">Bienvenido a Novelero</string>
     <string name="lorem_ipsum">La oscuridad en el Reino de las Sombras no era una simple ausencia de luz. Era una entidad palpable, una neblina densa que se enroscaba alrededor de mis tobillos como dedos fríos que buscaban arrastrarme hacia el abismo.\n\nCaminé con cautela, sintiendo el peso de la espada \'Eterna\' en mi espalda. Cada paso resonaba en el silencio absoluto, un eco que parecía burlarse de mi determinación. ¿Habría valido la pena este viaje? Los ancianos decían que solo aquel con el corazón puro podría despertar el poder latente en el vacío, pero mi corazón estaba lleno de dudas y arrepentimiento.\n\nDe repente, una luz tenue comenzó a parpadear en la distancia. No era la luz del sol, sino un resplandor azul eléctrico que palpitaba al ritmo de un corazón agitado. Me acerqué, con la mano en el pomo de mi espada, listo para cualquier cosa que pudiera surgir de las sombras.</string>
