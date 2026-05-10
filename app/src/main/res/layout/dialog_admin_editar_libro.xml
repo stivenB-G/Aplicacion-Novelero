@@ -1,6 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardBackgroundColor="@color/novelero_card"
+    app:cardCornerRadius="28dp"
+    app:cardElevation="8dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Header -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/tv_titulo_dialogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/titulo_editar_libro"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1" />
+
+                <ImageView
+                    android:id="@+id/btn_cerrar_dialogo"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_close_x"
+                    android:contentDescription="@string/btn_cancelar"
+                    app:tint="@color/novelero_muted" />
+            </RelativeLayout>
+
+            <!-- Book Cover Placeholder -->
+            <LinearLayout
+                android:id="@+id/layout_cambiar_portada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="24dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="120dp"
+                    android:layout_height="160dp"
+                    app:cardBackgroundColor="@android:color/transparent"
+                    app:cardElevation="0dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/fondo_subida" />
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_camera"
+                        android:contentDescription="@string/label_portada"
+                        app:tint="@color/novelero_muted" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/cambiar_portada"
+                    android:textColor="@color/novelero_muted"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+            </LinearLayout>
+
+            <!-- Book Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_nombre_libro"
+                android:textColor="@color/novelero_muted"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/et_nombre_libro"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/fondo_campo_texto"
+                android:hint="@string/hint_nombre_libro_ej"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/novelero_muted"
+                android:textSize="14sp"
+                android:autofillHints="name"
+                android:inputType="text" />
+
+            <!-- Sinopsis -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_sinopsis"
+                android:textColor="@color/novelero_muted"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/et_sinopsis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/fondo_campo_texto"
+                android:hint="@string/hint_sinopsis_ej"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/novelero_muted"
+                android:textSize="13sp"
+                android:gravity="top"
+                android:inputType="textMultiLine" />
+
+            <!-- Price -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/precio_cop"
+                android:textColor="@color/novelero_muted"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
+
+            <EditText
+                android:id="@+id/et_precio"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/fondo_campo_texto"
+                android:hint="@string/hint_precio_ej"
+                android:paddingHorizontal="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/novelero_muted"
+                android:textSize="14sp"
+                android:inputType="number" />
+
+            <!-- Genres -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/generos"
+                android:textColor="@color/novelero_muted"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_marginBottom="8dp" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/cg_generos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:chipSpacingHorizontal="8dp">
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cat_ficcion"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/novelero_input_bg"
+                    app:closeIconTint="@color/white" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cat_fantasia"
+                    android:textColor="@color/white"
+                    app:chipBackgroundColor="@color/novelero_input_bg"
+                    app:closeIconTint="@color/white" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <EditText
+                    android:id="@+id/et_nuevo_genero"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fondo_campo_texto"
+                    android:hint="@string/hint_anadir_genero"
+                    android:paddingHorizontal="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/novelero_muted"
+                    android:textSize="14sp"
+                    android:inputType="text" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/btn_anadir_genero"
+                    android:layout_width="56dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/fondo_boton_cancelar"
+                    android:src="@drawable/ic_plus"
+                    app:tint="@color/novelero_muted" />
+            </LinearLayout>
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btn_guardar_cambios"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/fondo_boton_principal"
+                app:backgroundTint="@null"
+                android:text="@string/btn_guardar_cambios"
+                android:textAllCaps="true"
+                android:textColor="@color/novelero_bg"
+                android:textStyle="bold"
+                app:cornerRadius="14dp"
+                app:icon="@drawable/ic_save"
+                app:iconGravity="textStart"
+                app:iconTint="@color/novelero_bg"
+                app:iconPadding="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>
