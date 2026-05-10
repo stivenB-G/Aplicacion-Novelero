@@ -16,7 +16,7 @@ class AdminDashboardFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_admin_dashboard, container, false)
+        val view = inflater.inflate(R.layout.fragment_admin_panel_control, container, false)
 
         val btnGestionarUsuarios = view.findViewById<Button>(R.id.btn_gestionar_usuarios)
         btnGestionarUsuarios.setOnClickListener {

@@ -13,6 +13,15 @@ class ForgotPasswordFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_forgot_password, container, false)
+        return inflater.inflate(R.layout.fragment_recuperar_contrasena, container, false)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        
+        view.findViewById<View>(R.id.tv_volver_login_frag).setOnClickListener {
+            // Regresa a la pantalla anterior
+            activity?.onBackPressedDispatcher?.onBackPressed()
+        }
     }
 }

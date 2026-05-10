@@ -16,7 +16,7 @@ class AddNovelFragment : Fragment() {
     ): View? {
 
         return inflater.inflate(
-            R.layout.fragment_add_novel,
+            R.layout.fragment_admin_agregar_libro,
             container,
             false
         )

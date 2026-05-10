@@ -14,6 +14,6 @@ class SalesReportFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_sales_report, container, false)
+        return inflater.inflate(R.layout.fragment_admin_reportes, container, false)
     }
 }
