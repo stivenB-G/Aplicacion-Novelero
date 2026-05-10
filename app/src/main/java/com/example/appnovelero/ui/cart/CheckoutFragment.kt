@@ -1,26 +1,27 @@
-package com.example.appnovelero.ui.admin
+package com.example.appnovelero.ui.cart
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.appnovelero.R
 
-class AdminBooksFragment : Fragment() {
+class CheckoutFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_admin_libros, container, false)
+        val view = inflater.inflate(R.layout.fragment_checkout, container, false)
 
-        val btnAddNovel = view.findViewById<Button>(R.id.btn_add_novel)
-        btnAddNovel.setOnClickListener {
-            findNavController().navigate(R.id.action_navigation_admin_libros_to_navigation_add_novel)
+        view.findViewById<Button>(R.id.btn_finalizar_pago).setOnClickListener {
+            Toast.makeText(context, "¡Pago realizado con éxito!", Toast.LENGTH_SHORT).show()
+            findNavController().popBackStack(R.id.navigation_biblioteca, false)
         }
 
         return view

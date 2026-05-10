@@ -96,7 +96,7 @@
                 android:textSize="13sp" />
 
             <TextView
-                android:id="@+id/tv_olvide_contrasena"
+                android:id="@+id/tvForgotPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
