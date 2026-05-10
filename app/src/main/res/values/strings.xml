@@ -27,6 +27,11 @@
     <string name="btn_enviar_instrucciones">Enviar instrucciones  →</string>
     <string name="volver_inicio_sesion">←  Volver al Inicio de Sesión</string>
 
+    <!-- Recuperar Contraseña Fragment -->
+    <string name="recover_password_title">Recuperar contraseña</string>
+    <string name="recover_password_subtitle">Ingresa tu correo y te enviaremos instrucciones para recuperar tu cuenta.</string>
+    <string name="recover_password_info">Recibirás un enlace seguro para restablecer tu contraseña.</string>
+
     <!-- Biblioteca (Textos reales para la maqueta) -->
     <string name="saludo_usuario">Hola, Alex</string>
     <string name="estadistica_semanal">Has leído 12 capítulos esta semana.</string>
@@ -95,6 +100,47 @@
     <string name="libros_destacados">LIBROS DESTACADOS</string>
     <string name="ver_todos">VER TODOS</string>
     <string name="todas_las_novelas">TODAS LAS NOVELAS</string>
+
+    <!-- Admin Dashboard -->
+    <string name="admin_dashboard_title">Dashboard Administrativo</string>
+    <string name="admin_dashboard_subtitle">Control general de Novelero</string>
+    <string name="admin_label_usuarios">Usuarios</string>
+    <string name="admin_label_novelas">Novelas</string>
+    <string name="admin_label_ventas">Ventas</string>
+    <string name="admin_label_autores">Autores</string>
+    <string name="admin_label_accesos_rapidos">Accesos rápidos</string>
+    <string name="admin_btn_gestionar_usuarios">Gestionar usuarios</string>
+    <string name="admin_btn_gestionar_novelas">Gestionar novelas</string>
+    <string name="admin_btn_ver_reportes">Ver reportes</string>
+
+    <!-- Sales Report -->
+    <string name="sales_report_title">Reporte de Ventas</string>
+    <string name="sales_report_subtitle">Análisis financiero de Novelero</string>
+    <string name="sales_report_monthly_income">Ingresos del mes</string>
+    <string name="sales_report_growth_hint">+18% respecto al mes anterior</string>
+    <string name="sales_report_recent_activity">Actividad reciente</string>
+    <string name="sales_report_new_purchase">Nueva compra registrada</string>
+    <string name="sales_report_purchase_desc">La Sombra del Reino fue adquirida</string>
+    <string name="sales_report_new_author">Nuevo autor registrado</string>
+    <string name="sales_report_author_desc">Se unió un nuevo creador premium</string>
+    <string name="sales_report_today">Hoy</string>
+
+    <!-- Library/Home Home additions -->
+    <string name="banner_discover_title">Descubre nuevas historias</string>
+    <string name="banner_discover_subtitle">Miles de novelas digitales esperan por ti.</string>
+    <string name="btn_explorar">Explorar</string>
+    <string name="label_categorias">Categorías</string>
+    <string name="cat_scifi">Sci-Fi</string>
+    <string name="label_trending">Trending</string>
+    <string name="label_ver_mas">Ver más</string>
+    <string name="trending_book_title">La Sombra del Reino</string>
+    <string name="trending_book_genres">Aventura • Fantasía</string>
+    <string name="trending_book_desc">Una historia épica llena de magia, secretos y traiciones.</string>
+    <string name="label_rating_trending">⭐ 4.9</string>
+
+    <!-- Splash -->
+    <string name="splash_slogan">Historias que inspiran</string>
+    <string name="splash_version">v1.0</string>
 
     <string name="Texto_bienvenida">Bienvenido a Novelero</string>
     <string name="lorem_ipsum">La oscuridad en el Reino de las Sombras no era una simple ausencia de luz. Era una entidad palpable, una neblina densa que se enroscaba alrededor de mis tobillos como dedos fríos que buscaban arrastrarme hacia el abismo.\n\nCaminé con cautela, sintiendo el peso de la espada \'Eterna\' en mi espalda. Cada paso resonaba en el silencio absoluto, un eco que parecía burlarse de mi determinación. ¿Habría valido la pena este viaje? Los ancianos decían que solo aquel con el corazón puro podría despertar el poder latente en el vacío, pero mi corazón estaba lleno de dudas y arrepentimiento.\n\nDe repente, una luz tenue comenzó a parpadear en la distancia. No era la luz del sol, sino un resplandor azul eléctrico que palpitaba al ritmo de un corazón agitado. Me acerqué, con la mano en el pomo de mi espada, listo para cualquier cosa que pudiera surgir de las sombras.</string>

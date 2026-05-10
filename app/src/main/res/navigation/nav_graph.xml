@@ -10,7 +10,11 @@
         android:id="@+id/navigation_biblioteca"
         android:name="com.example.appnovelero.ui.library.LibraryFragment"
         android:label="Biblioteca"
-        tools:layout="@layout/fragment_biblioteca" />
+        tools:layout="@layout/fragment_biblioteca">
+        <action
+            android:id="@+id/action_navigation_biblioteca_to_navigation_carrito"
+            app:destination="@id/navigation_carrito" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_explorar"
@@ -46,7 +50,17 @@
         android:id="@+id/navigation_carrito"
         android:name="com.example.appnovelero.ui.cart.CartFragment"
         android:label="Carrito"
-        tools:layout="@layout/fragment_carrito" />
+        tools:layout="@layout/fragment_carrito">
+        <action
+            android:id="@+id/action_navigation_carrito_to_checkoutFragment"
+            app:destination="@id/navigation_checkout" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_checkout"
+        android:name="com.example.appnovelero.ui.cart.CheckoutFragment"
+        android:label="Pasarela de Pago"
+        tools:layout="@layout/fragment_checkout" />
 
     <fragment
         android:id="@+id/navigation_mis_libros"
@@ -55,6 +69,22 @@
         tools:layout="@layout/fragment_mis_libros" />
 
     <!-- Administración -->
+    <fragment
+        android:id="@+id/navigation_admin_dashboard"
+        android:name="com.example.appnovelero.ui.admin.AdminDashboardFragment"
+        android:label="Dashboard Admin"
+        tools:layout="@layout/fragment_admin_dashboard">
+        <action
+            android:id="@+id/action_navigation_admin_dashboard_to_navigation_admin_ventas"
+            app:destination="@id/navigation_admin_ventas" />
+        <action
+            android:id="@+id/action_navigation_admin_dashboard_to_navigation_admin_usuarios"
+            app:destination="@id/navigation_admin_usuarios" />
+        <action
+            android:id="@+id/action_navigation_admin_dashboard_to_navigation_admin_libros"
+            app:destination="@id/navigation_admin_libros" />
+    </fragment>
+
     <fragment
         android:id="@+id/navigation_admin_perfil"
         android:name="com.example.appnovelero.ui.admin.AdminProfileFragment"
@@ -71,7 +101,11 @@
         android:id="@+id/navigation_admin_libros"
         android:name="com.example.appnovelero.ui.admin.AdminBooksFragment"
         android:label="Gestión de Libros"
-        tools:layout="@layout/fragment_admin_libros" />
+        tools:layout="@layout/fragment_admin_libros">
+        <action
+            android:id="@+id/action_navigation_admin_libros_to_navigation_add_novel"
+            app:destination="@id/navigation_add_novel" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_admin_reportes"
@@ -80,9 +114,27 @@
         tools:layout="@layout/fragment_admin_reportes" />
 
     <fragment
+        android:id="@+id/navigation_admin_ventas"
+        android:name="com.example.appnovelero.ui.admin.SalesReportFragment"
+        android:label="Reporte de Ventas"
+        tools:layout="@layout/fragment_sales_report" />
+
+    <fragment
         android:id="@+id/navigation_admin_editar_usuario"
         android:name="com.example.appnovelero.ui.admin.AdminEditUserFragment"
         android:label="Editar Usuario"
         tools:layout="@layout/fragment_admin_editar_usuario" />
+
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.appnovelero.ui.auth.ForgotPasswordFragment"
+        android:label="Recuperar contraseña"
+        tools:layout="@layout/fragment_forgot_password"/>
+
+    <fragment
+        android:id="@+id/navigation_add_novel"
+        android:name="com.example.appnovelero.ui.admin.AddNovelFragment"
+        android:label="Agregar Novela"
+        tools:layout="@layout/fragment_add_novel"/>
 
 </navigation>
