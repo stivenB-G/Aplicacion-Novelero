@@ -32,7 +32,6 @@ class LoginActivity : AppCompatActivity() {
             try {
                 findNavController(R.id.nav_host_fragment_content_main).navigate(R.id.forgotPasswordFragment)
             } catch (e: Exception) {
-                // Fallback si no hay NavController (LoginActivity es una Activity independiente)
                 val intent = Intent(this, RecuperarContrasenaActivity::class.java)
                 startActivity(intent)
             }
