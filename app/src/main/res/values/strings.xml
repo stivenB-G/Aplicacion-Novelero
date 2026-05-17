@@ -135,6 +135,8 @@
     <string name="admin_btn_gestionar_usuarios">Gestionar usuarios</string>
     <string name="admin_btn_gestionar_novelas">Gestionar novelas</string>
     <string name="admin_btn_ver_reportes">Ver reportes</string>
+    <string name="panel_administrador">Panel Administrador</string>
+    <string name="gestiona_usuarios_ventas_y_libros">Gestiona usuarios, ventas y libros</string>
 
     <!-- Sales Report -->
     <string name="sales_report_title">Reporte de Ventas</string>
@@ -156,7 +158,6 @@
     <string name="cat_scifi">Sci-Fi</string>
     <string name="label_trending">Trending</string>
     <string name="label_ver_mas">Ver más</string>
-    <string name="trending_book_title">La Sombra del Reino</string>
     <string name="trending_book_genres">Aventura • Fantasía</string>
     <string name="trending_book_desc">Una historia épica llena de magia, secretos y traiciones.</string>
     <string name="label_rating_trending">⭐ 4.9</string>
@@ -167,4 +168,28 @@
 
     <string name="Texto_bienvenida">Bienvenido a Novelero</string>
     <string name="lorem_ipsum">La oscuridad en el Reino de las Sombras no era una simple ausencia de luz. Era una entidad palpable, una neblina densa que se enroscaba alrededor de mis tobillos como dedos fríos que buscaban arrastrarme hacia el abismo.\n\nCaminé con cautela, sintiendo el peso de la espada \'Eterna\' en mi espalda. Cada paso resonaba en el silencio absoluto, un eco que parecía burlarse de mi determinación. ¿Habría valido la pena este viaje? Los ancianos decían que solo aquel con el corazón puro podría despertar el poder latente en el vacío, pero mi corazón estaba lleno de dudas y arrepentimiento.\n\nDe repente, una luz tenue comenzó a parpadear en la distancia. No era la luz del sol, sino un resplandor azul eléctrico que palpitaba al ritmo de un corazón agitado. Me acerqué, con la mano en el pomo de mi espada, listo para cualquier cosa que pudiera surgir de las sombras.</string>
+    <string name="la_sombra_del_reino">La Sombra del Reino</string>
+
+    <!-- Checkout compra libro -->
+    <string name="pasarela_de_pago">Pasarela de Pago</string>
+    <string name="finaliza_tu_compra_de_forma_segura">Finaliza tu compra de forma segura</string>
+    <string name="seleccione_m_todo_de_pago">Seleccione método de Pago</string>
+    <string name="Numero_tarjeta">**** **** **** 4242</string>
+    <string name="pagar_ahora_libro">Pagar Ahora</string>
+
+
+    <!-- Checkout Premium -->
+    <string name="checkout_premium">Checkout Premium</string>
+    <string name="finaliza_tu_compra_digital">Finaliza tu compra digital</string>
+    <string name="trending_book_title">La Sombra del Reino</string>
+    <string name="autor_premium">Autor Premium</string>
+    <string name="m_todo_de_pago">Método de pago</string>
+    <string name="tarjeta_terminada_en_4582">Tarjeta terminada en 4582</string>
+    <string name="resumen">Resumen</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="iva">IVA</string>
+    <string name="total">Total</string>
+    <string name="pagar_ahora">Pagar ahora</string>
+
+
 </resources>

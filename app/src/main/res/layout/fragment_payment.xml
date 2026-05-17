@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Checkout Premium"
+            android:text="@string/checkout_premium"
             android:textColor="@color/white"
             android:textSize="28sp"
             android:textStyle="bold" />
@@ -24,7 +24,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Finaliza tu compra digital"
+            android:text="@string/finaliza_tu_compra_digital"
             android:textColor="@color/novelero_text_secondary"
             android:textSize="14sp"
             android:layout_marginTop="4dp"/>
@@ -60,7 +60,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="La Sombra del Reino"
+                        android:text="@string/la_sombra_del_reino"
                         android:textColor="@color/white"
                         android:textSize="20sp"
                         android:textStyle="bold"/>
@@ -68,7 +68,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Autor Premium"
+                        android:text="@string/autor_premium"
                         android:textColor="@color/novelero_text_secondary"
                         android:textSize="14sp"
                         android:layout_marginTop="6dp"/>
@@ -92,7 +92,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Método de pago"
+            android:text="@string/m_todo_de_pago"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="18sp"
@@ -122,7 +122,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tarjeta terminada en 4582"
+                    android:text="@string/tarjeta_terminada_en_4582"
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:layout_marginStart="14dp"/>
@@ -135,7 +135,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Resumen"
+            android:text="@string/resumen"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -164,7 +164,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Subtotal"
+                        android:text="@string/subtotal"
                         android:textColor="@color/novelero_text_secondary"/>
 
                     <TextView
@@ -184,7 +184,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="IVA"
+                        android:text="@string/iva"
                         android:textColor="@color/novelero_text_secondary"/>
 
                     <TextView
@@ -209,7 +209,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="Total"
+                        android:text="@string/total"
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold"/>
@@ -233,7 +233,7 @@
             android:layout_width="match_parent"
             android:layout_height="58dp"
             android:layout_marginTop="32dp"
-            android:text="Pagar ahora"
+            android:text="@string/pagar_ahora"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="16sp"
