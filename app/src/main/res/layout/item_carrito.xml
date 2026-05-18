@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardBackgroundColor="@color/novelero_card"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Miniatura de la Portada -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_portada_carrito"
+            android:layout_width="60dp"
+            android:layout_height="85dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/novelero_input_bg">
+            <ImageView
+                android:id="@+id/iv_portada_carrito"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="@null"
+                tools:src="@color/novelero_input_bg" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Información -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/cv_portada_carrito"
+            android:layout_toStartOf="@id/btn_eliminar_carrito"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_titulo_carrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="La espada del guerrero" />
+
+            <TextView
+                android:id="@+id/tv_autor_carrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/novelero_text_secondary"
+                android:textSize="13sp"
+                tools:text="Elena Valiente" />
+
+            <TextView
+                android:id="@+id/tv_precio_carrito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/novelero_accent"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="$ 25.000 COP" />
+        </LinearLayout>
+
+        <!-- Botón Borrar -->
+        <ImageView
+            android:id="@+id/btn_eliminar_carrito"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_borrar"
+            app:tint="@color/novelero_muted"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Eliminar del carrito" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

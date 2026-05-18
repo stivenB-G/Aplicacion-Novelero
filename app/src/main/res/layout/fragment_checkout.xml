@@ -20,8 +20,7 @@
             android:text="@string/pasarela_de_pago"
             android:textColor="@color/white"
             android:textSize="28sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText" />
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -29,16 +28,15 @@
             android:layout_marginTop="8dp"
             android:text="@string/finaliza_tu_compra_de_forma_segura"
             android:textColor="@color/novelero_text_secondary"
-            android:textSize="14sp"
-            tools:ignore="HardcodedText" />
+            android:textSize="14sp" />
 
-        <!-- Tarjetas de Pago -->
+        <!-- Sección de Métodos de Pago -->
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
             app:cardBackgroundColor="@color/novelero_card"
-            app:cardCornerRadius="16dp"
+            app:cardCornerRadius="24dp"
             app:cardElevation="0dp">
 
             <LinearLayout
@@ -47,47 +45,48 @@
                 android:orientation="vertical"
                 android:padding="20dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/seleccione_m_todo_de_pago"
-                    android:textColor="@color/white"
-                    android:textStyle="bold"
-                    tools:ignore="HardcodedText" />
-
-                <!-- Simulación de tarjeta -->
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginTop="16dp"
-                    android:background="@drawable/fondo_campo_texto"
-                    android:paddingHorizontal="16dp">
-
-                    <ImageView
-                        android:id="@+id/iv_card_icon"
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/ic_id_card"
-                        app:tint="@color/novelero_primary" />
+                    android:layout_height="wrap_content">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="16dp"
-                        android:layout_toEndOf="@id/iv_card_icon"
-                        android:text="@string/Numero_tarjeta"
+                        android:text="@string/seleccione_m_todo_de_pago"
                         android:textColor="@color/white"
-                        tools:ignore="HardcodedText" />
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
-                    <RadioButton
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_anadir_metodo"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="38dp"
                         android:layout_alignParentEnd="true"
                         android:layout_centerVertical="true"
-                        android:checked="true" />
+                        android:text="+ AÑADIR"
+                        android:textAllCaps="false"
+                        android:textColor="@color/novelero_primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:paddingHorizontal="16dp"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        app:backgroundTint="@color/novelero_input_bg"
+                        app:cornerRadius="10dp"
+                        app:rippleColor="@color/novelero_primary"
+                        tools:ignore="HardcodedText" />
                 </RelativeLayout>
+
+                <!-- RecyclerView para métodos de pago -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_metodos_pago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_metodo_pago"
+                    tools:itemCount="2" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -96,7 +95,7 @@
         <Button
             android:id="@+id/btn_finalizar_pago"
             android:layout_width="match_parent"
-            android:layout_height="56dp"
+            android:layout_height="58dp"
             android:layout_marginTop="40dp"
             android:background="@drawable/fondo_boton_principal"
             android:text="@string/pagar_ahora_libro"
@@ -104,8 +103,7 @@
             android:textColor="@color/novelero_bg"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:backgroundTint="@null"
-            tools:ignore="HardcodedText" />
+            app:backgroundTint="@null" />
 
     </LinearLayout>
 </androidx.core.widget.NestedScrollView>

@@ -43,7 +43,6 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment_content_main) as NavHostFragment
         val navController = navHostFragment.navController
 
-        // Definimos las pantallas principales para que no muestren la flecha de "atrás"
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.navigation_biblioteca, 
@@ -64,7 +63,11 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.action_settings -> true
+            R.id.action_notificaciones -> {
+                val dialog = NotificacionesDialogFragment.newInstance()
+                dialog.show(supportFragmentManager, NotificacionesDialogFragment.TAG)
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }

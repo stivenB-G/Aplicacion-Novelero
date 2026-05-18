@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <!-- Portada Vertical Estilo Póster -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/novelero_card">
+
+        <ImageView
+            android:id="@+id/iv_portada_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@color/novelero_primary"
+            android:contentDescription="@null" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Información debajo de la imagen -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/btn_opciones_item"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_titulo_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:text="Walkure Romanze" />
+
+            <TextView
+                android:id="@+id/tv_subtitulo_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/novelero_text_secondary"
+                android:textSize="12sp"
+                tools:text="Novedad • Fantasía" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_opciones_item"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="false"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_mas_opciones"
+            app:tint="@color/novelero_muted"
+            android:contentDescription="Opciones" />
+    </RelativeLayout>
+
+</LinearLayout>

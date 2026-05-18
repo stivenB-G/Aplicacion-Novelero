@@ -166,6 +166,13 @@
     <string name="splash_slogan">Historias que inspiran</string>
     <string name="splash_version">v1.0</string>
 
+    <!-- Mensajes de Ventas/Premium -->
+    <string name="banner_premium_titulo">¡Libera tu imaginación!</string>
+    <string name="banner_premium_desc">Obtén acceso ilimitado a todas las novelas y contenido exclusivo sin anuncios.</string>
+    <string name="btn_ser_premium">SER PREMIUM</string>
+    <string name="perfil_btn_premium">Mejorar a Plan Premium</string>
+    <string name="perfil_desc_premium">Desbloquea todos los beneficios ahora</string>
+
     <string name="Texto_bienvenida">Bienvenido a Novelero</string>
     <string name="lorem_ipsum">La oscuridad en el Reino de las Sombras no era una simple ausencia de luz. Era una entidad palpable, una neblina densa que se enroscaba alrededor de mis tobillos como dedos fríos que buscaban arrastrarme hacia el abismo.\n\nCaminé con cautela, sintiendo el peso de la espada \'Eterna\' en mi espalda. Cada paso resonaba en el silencio absoluto, un eco que parecía burlarse de mi determinación. ¿Habría valido la pena este viaje? Los ancianos decían que solo aquel con el corazón puro podría despertar el poder latente en el vacío, pero mi corazón estaba lleno de dudas y arrepentimiento.\n\nDe repente, una luz tenue comenzó a parpadear en la distancia. No era la luz del sol, sino un resplandor azul eléctrico que palpitaba al ritmo de un corazón agitado. Me acerqué, con la mano en el pomo de mi espada, listo para cualquier cosa que pudiera surgir de las sombras.</string>
     <string name="la_sombra_del_reino">La Sombra del Reino</string>
@@ -179,17 +186,38 @@
 
 
     <!-- Checkout Premium -->
-    <string name="checkout_premium">Checkout Premium</string>
-    <string name="finaliza_tu_compra_digital">Finaliza tu compra digital</string>
+    <string name="checkout_premium">Plan Premium</string>
+    <string name="finaliza_tu_compra_digital">Elige el plan que mejor se adapte a ti</string>
+    <string name="plan_1_mes">Plan Mensual</string>
+    <string name="plan_3_meses">Plan Trimestral</string>
+    <string name="plan_1_ano">Plan Anual</string>
+    <string name="precio_1_mes">$ 29.900</string>
+    <string name="precio_3_meses">$ 79.900</string>
+    <string name="precio_1_ano">$ 249.900</string>
+    <string name="ahorro_trimestral">Ahorra 10%</string>
+    <string name="ahorro_anual">Ahorra 30%</string>
+    <string name="tiempo_1_mes">1 mes de lectura ilimitada</string>
+    <string name="tiempo_3_meses">3 meses de acceso total</string>
+    <string name="tiempo_1_ano">1 año completo de beneficios</string>
     <string name="trending_book_title">La Sombra del Reino</string>
     <string name="autor_premium">Autor Premium</string>
     <string name="m_todo_de_pago">Método de pago</string>
     <string name="tarjeta_terminada_en_4582">Tarjeta terminada en 4582</string>
     <string name="resumen">Resumen</string>
+    <string name="plan_premium_mensual">Plan Premium mensual</string>
+
+
+    <string name="carrito">Carrito de Compras</string>
+
     <string name="subtotal">Subtotal</string>
     <string name="iva">IVA</string>
     <string name="total">Total</string>
+    <string name="articulos_en_orden">%d libros en tu orden</string>
     <string name="pagar_ahora">Pagar ahora</string>
+
+
+    <!-- Notificaiones -->
+    <string name="notificaciones">Notificaciones</string>
 
 
 </resources>

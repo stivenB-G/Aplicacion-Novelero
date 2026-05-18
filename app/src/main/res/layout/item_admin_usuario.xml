@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="6dp"
+    app:cardBackgroundColor="@color/novelero_card"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:paddingHorizontal="16dp">
+
+        <!-- Avatar del Usuario -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_avatar_item"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            app:cardBackgroundColor="@color/novelero_bg"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/iv_avatar_admin_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:src="@drawable/icono_perfil"
+                android:contentDescription="@null"
+                app:tint="@color/novelero_muted" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Información del Usuario -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/cv_avatar_item"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nombre_admin_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Andres347" />
+
+            <TextView
+                android:id="@+id/tv_rol_admin_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/novelero_accent"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                tools:text="PREMIUM" />
+        </LinearLayout>
+
+        <!-- Iconos de Acción -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_editar_usuario"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_editorial"
+                android:contentDescription="@null"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/btn_eliminar_usuario"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_borrar"
+                android:contentDescription="@null"
+                app:tint="@color/novelero_danger" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

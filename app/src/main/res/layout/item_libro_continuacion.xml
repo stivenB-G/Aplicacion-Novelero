@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="220dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Tarjeta Cuadrada Estilo Vault -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:cardCornerRadius="32dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/novelero_card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_portada_cont"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@color/novelero_accent"
+                android:contentDescription="@null" />
+
+            <!-- Badge de "Nuevo" superpuesto -->
+            <TextView
+                android:id="@+id/tv_badge_nuevo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="16dp"
+                android:background="@drawable/fondo_chip_categoria_seleccionado"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="4dp"
+                android:text="NUEVO"
+                android:textColor="@color/novelero_bg"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                tools:ignore="SmallSp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Texto de abajo -->
+    <TextView
+        android:id="@+id/tv_titulo_cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Umiro" />
+
+    <TextView
+        android:id="@+id/tv_volumen_cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/novelero_primary"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        tools:text="Nuevo Volumen 3" />
+
+</LinearLayout>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -51,12 +50,13 @@
                     tools:ignore="UseCompoundDrawables">
 
                     <TextView
+                        android:id="@+id/tv_tag_genero"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/fondo_chip_categoria"
                         android:paddingHorizontal="12dp"
                         android:paddingVertical="4dp"
-                        android:text="@string/cat_fantasia"
+                        android:text="FANTASÍA"
                         android:textAllCaps="true"
                         android:textColor="@color/novelero_accent"
                         android:textSize="10sp"
@@ -75,24 +75,11 @@
                         android:textSize="10sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText,SmallSp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
-                        android:background="@drawable/fondo_chip_categoria"
-                        android:paddingHorizontal="12dp"
-                        android:paddingVertical="4dp"
-                        android:text="@string/cat_romance"
-                        android:textAllCaps="true"
-                        android:textColor="@color/novelero_accent"
-                        android:textSize="10sp"
-                        android:textStyle="bold"
-                        tools:ignore="SmallSp" />
                 </LinearLayout>
 
                 <!-- Título -->
                 <TextView
+                    android:id="@+id/tv_titulo_detalle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -127,6 +114,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <TextView
+                        android:id="@+id/tv_autor_detalle"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
@@ -164,6 +152,7 @@
                                 android:contentDescription="@null"
                                 app:tint="@color/novelero_primary" />
                             <TextView
+                                android:id="@+id/tv_rating_detalle"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
@@ -202,6 +191,7 @@
                                 android:contentDescription="@null"
                                 app:tint="@color/novelero_accent" />
                             <TextView
+                                android:id="@+id/tv_caps_detalle"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
@@ -240,10 +230,11 @@
                                 android:contentDescription="@null"
                                 app:tint="@color/novelero_accent" />
                             <TextView
+                                android:id="@+id/tv_vistas_detalle"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="4dp"
-                                android:text="12k"
+                                android:text="1.2M"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 tools:ignore="HardcodedText" />
@@ -269,6 +260,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/tv_sinopsis_detalle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -314,6 +306,7 @@
                 app:tint="@color/novelero_bg" />
 
             <TextView
+                android:id="@+id/tv_btn_precio_detalle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
